@@ -7,17 +7,20 @@ class productTil extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-        child: Column(
-      children: [
-        Text("${pro1.title}"),
-        Text("${pro1.price}"),
-        Image.network(
-          "${pro1.image}",
-          height: 170,
-          width: double.infinity,
-          fit: BoxFit.cover,
-        )
-      ],
-    ));
+        color: pro1.color,
+        child: Container(
+          child: Column(
+            children: [
+              Text("${pro1.title}"),
+              Text("${pro1.price}"),
+              Image.asset(
+                "${pro1.image}",
+                height: 170,
+                width: double.infinity,
+                fit: BoxFit.cover,
+              )
+            ],
+          ),
+        ));
   }
 }

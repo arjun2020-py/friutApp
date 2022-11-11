@@ -13,39 +13,37 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   List<ProductModel> product = [
     ProductModel(
-      title: "Strawberry",
-      price: "\$2.45",
-      image: "https://swingit.in/uploads/ecom/media-1608711152155.jpg",
-    ),
+        title: "Strawberry",
+        price: "\$2.45",
+        image: "assets/images/stob.png",
+        color: Color(0xffF7A4A4)),
     ProductModel(
         title: "Fresh Golden Pineapple",
         price: "\$1.52 each",
-        image:
-            "https://images-cdn.ubuy.co.in/10NZNCXA-fresh-golden-pineapple.jpg",
+        image: "assets/images/panple.png",
         color: Colors.yellow),
     ProductModel(
         title: "Fresho Blueberry",
         //  descrption : "1lb",
         price: "\$4.07",
-        image:
-            "https://www.bigbasket.com/media/uploads/p/l/30009286_7-fresho-blueberry.jpg"),
+        image: "assets/images/grape.png",
+        color: Color(0xffFEBE8C)),
     ProductModel(
         title: "Dargon fruit",
         //   descrption : "Averge 0.87 lb",
         price: "\$5.36",
-        image:
-            "https://www.farmersfz.com/assets/public/vegimg/dragon_fruit1.jpg"),
+        image: "assets/images/dragenpng.png",
+        color: Color(0xffFFFBC1)),
     ProductModel(
         title: "Lychee",
         // descrption : "1 lb",
         price: "\$8.22  per lib",
-        image:
-            "https://rukminim1.flixcart.com/image/416/416/xif0q/plant-seed/z/u/4/20-cf-4-20-litchi-caribbean-original-imaghs4vhfzwk594.jpeg?q=70"),
+        image: "assets/images/lac.png"),
     ProductModel(
         title: "Mango",
         price: "\$1.01 each",
-        image:
-            "https://rukminim1.flixcart.com/image/416/416/kt8zb0w0/fruit/g/n/h/500-1-un-branded-whole-original-imag6mrzbkenbdfa.jpeg?q=70")
+        image: "assets/images/mang.png",
+        color: Color(0xff557153))
   ];
   @override
   Widget build(BuildContext context) {
@@ -74,7 +72,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   crossAxisCount: 2,
                   mainAxisSpacing: 12,
                   crossAxisSpacing: 12,
-                  mainAxisExtent: 450,
+                  mainAxisExtent: 300,
                   childAspectRatio: 0.05),
               itemCount: product.length,
               itemBuilder: (BuildContext context, int index) {

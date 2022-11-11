@@ -24,7 +24,7 @@ class ProductScreen extends StatelessWidget {
               Container(
                 decoration: BoxDecoration(color: p2.color),
               ),
-              Image.network("${p2.image}"),
+              Image.asset("${p2.image}"),
               Card(
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10)),
@@ -32,7 +32,7 @@ class ProductScreen extends StatelessWidget {
                   title: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(right: 150),
+                        padding: const EdgeInsets.only(right: 180),
                         child: Text("${p2.title}"),
                       ),
                       Padding(
@@ -42,9 +42,12 @@ class ProductScreen extends StatelessWidget {
                           style: TextStyle(fontSize: 20),
                         ),
                       ),
-                      Text(
-                        "Product Decrption",
-                        style: TextStyle(),
+                      const Padding(
+                        padding: EdgeInsets.only(right: 150),
+                        child: Text(
+                          "Product Decrption",
+                          style: TextStyle(),
+                        ),
                       ),
                       const Padding(
                         padding: EdgeInsets.all(16),
