@@ -26,7 +26,9 @@ class ProductScreen extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(right: 150),
                     child: IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
                         icon: Icon(Icons.arrow_back_ios_new_outlined)),
                   ),
                   Padding(
