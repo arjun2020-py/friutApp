@@ -9,18 +9,34 @@ class ProductScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: p2.color,
-      appBar: AppBar(
-        leading: IconButton(
-            onPressed: () {
-              Navigator.pop(context);
-            },
-            icon: Icon(Icons.arrow_back_ios_new_outlined)),
-        actions: [Icon(Icons.horizontal_split_rounded)],
-      ),
+      // appBar: AppBar(
+      //   leading: IconButton(
+      //       onPressed: () {
+      //         Navigator.pop(context);
+      //       },
+      //       icon: Icon(Icons.arrow_back_ios_new_outlined)),
+      //   actions: [Icon(Icons.horizontal_split_rounded)],
+      // ),
       body: ListView(
         children: [
           Column(
             children: [
+              Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(right: 150),
+                    child: IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.arrow_back_ios_new_outlined)),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 100),
+                    child: IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.horizontal_split_rounded)),
+                  ),
+                ],
+              ),
               Container(
                 decoration: BoxDecoration(color: p2.color),
               ),
